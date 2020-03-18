@@ -1,0 +1,49 @@
+{
+  "name": "hn-feed-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "unit-test": "./node_modules/mocha/bin/mocha ./app/**/*.spec.js -t 10000",
+    "coverage": "nyc --reporter=text-summary  ./node_modules/mocha/bin/mocha ./app/**/*.spec.js -t 10000  ",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zaeta88/hn-feed-api.git"
+  },
+  "nyc": {
+    "include": [
+      "./app/*.js",
+      "./app/**/*.js",
+      "./app/**/**/*.js"
+    ],
+    "exclude": [
+      "**/*.spec.js",
+      "**/**/*.spec.js",
+      "**/**/**/*.spec.js"
+    ],
+    "all": true
+  },
+  "author": "Rafael Camacho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaeta88/hn-feed-api/issues"
+  },
+  "homepage": "https://github.com/zaeta88/hn-feed-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.4",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^7.1.1",
+    "mockery": "2.0.0",
+    "nyc": "^12.0.2",
+    "sinon": "^7.1.1",
+    "sinon-chai": "3.2.0"
+  }
+}
