@@ -1,0 +1,25 @@
+# ROOT_DIR: path hasta el directorio donde estan los proyectos.
+#
+# To create the stack:
+# - build the hn-feed-ui and hn-feed-api images: check the corresponding Dockerfile 
+# Run the next command in the project root
+# - docker stack deploy -c docker-stack.yml hn-feed
+# Services:
+# - api
+# - mongo
+# - web
+
+version: '1.0'
+services:
+  api:
+    image: 'hn-feed-api:latest'
+    ports:
+    - "3001:3001"
+  mongo:
+    image: mongo
+    ports:
+    - "27017:27017"
+  ui:
+    image: 'hn-feed-ui:latest'
+    ports:
+    - "3000:3000"

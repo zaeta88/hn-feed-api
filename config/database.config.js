@@ -1,3 +1,3 @@
 module.exports = {
-  url: 'mongodb://localhost:27017/easy-notes'
+  url: process.env.MONGO_DB_URL || 'mongodb://localhost:27017/stories'
 }
