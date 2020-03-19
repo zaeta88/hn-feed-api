@@ -1,5 +1,5 @@
 This app is to display the hacker news from:
-[http://hn.algolia.com/api/v1/search_by_date?query=nodejs](http://hn.algolia.com/api/v1/search_by_date?query=nodejs) that are being formatted from the hn-feed-api, here you can check all the news title, author and date of creation listed on a table, go to the selected news by clicking on the title or author name and remove the news you want, also the table displays the first 5 news, you can iterate betweem then or increase the range
+[http://hn.algolia.com/api/v1/search_by_date?query=nodejs](http://hn.algolia.com/api/v1/search_by_date?query=nodejs) that are being formatted from the hn-feed-api, here you can check all the news title, author and date of creation listed on a table, go to the selected news by clicking on the title or author name and remove the news you want, also the table displays the first 5 news, you can iterate betweem then or increase the range.
 
 ## Available Scripts
 
